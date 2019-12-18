@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{
+            color:red;
+        }
+        p{
+            color:whitesmoke;
+            background-color: brown;
+        }
+        .big{
+            font-size: 20;
+        }
+        #highlight{
+            font-size: 40;
+
+        }
+    </style>
 </head>
 <body>
     <h1> 저는 이진우입니다 </h1>
-    <p> 저는 강동구에 살고 있고, 연봉은 1억정도 바랍니다 </p>
+    <p id="highlight"> 저는 강동구에 살고 있고, 연봉은 1억정도 바랍니다 </p>
+    <p class="big"> 스팀 세일 곧 입니다 </p>
+    <button id="btn"> 알림창 표시 </button>
 
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', function(){
+            alert('You Clicked');
+        });
+    </script>
 </body>
 </html>
